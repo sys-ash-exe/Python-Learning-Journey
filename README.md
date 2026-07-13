@@ -1,2 +1,2 @@
 # Python Learning Journey
-All the python cdoes i've written so far
+All the python codes i've written so far
