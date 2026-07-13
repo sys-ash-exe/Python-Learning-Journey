@@ -1,8 +1,0 @@
-print("Welcome")
-age = input("Enter your age")
-name = input("Enter your name")
-city = input("Enter your city")
-print("\n--My Profile--")
-print("\nYour name is", name, "| Type:", type(name))
-print("\nYour age is", age, "| Type:", type(age))
-print("\nYour city is", city, "| Type:", type(city))
