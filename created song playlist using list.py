@@ -1,0 +1,15 @@
+playlist = ["Song A", "Song B", "Song C", "Song D", "Song E"]
+print(playlist)
+print(playlist.index("Song C"))
+print(playlist.count("Song A"))
+for x in range(2):
+    input_song = input("Enter a song to add to the playlist: ")
+    playlist.append(input_song)
+print("Updated playlist:", playlist)
+playlist.remove("Song B")
+print("Playlist after removing Song B:", playlist)
+playlist.pop(0)
+print("Playlist after removing first song:", playlist)
+print("\nWhat was removed from the playlist? ", playlist.pop())
+print(playlist[1:3])
+print(playlist[3:5])
