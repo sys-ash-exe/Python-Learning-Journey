@@ -1,0 +1,35 @@
+#making a rock paper scissors game
+import random
+def get_choices():
+    options = ["rock", "paper", "scissors"]
+    player_choices= input("Enter a choice (rock, paper, scissors): ")
+    computer_choices = random.choice(options)
+    choices = {"player": player_choices, "computer": computer_choices}
+    return choices
+def check_win(player, computer):
+    print(f"You chose {player} and the computer chose {computer}")
+    if player == computer:
+        return "It's a tie!"
+    elif player == "rock":
+        if computer == "scissors":
+            return "Rock smashes scissors! You win!"
+        else:
+            return "Paper covers rock! You lose."
+    elif player == "paper":
+        if computer == "rock":
+            return "Paper covers rock! You win!"
+        else:
+            return "Scissors cuts paper! You lose."
+    elif player == "scissors":
+        if computer == "paper":
+            return "Scissors cuts paper! You win!"
+        else:
+            return "Rock smashes scissors! You lose."
+choices = get_choices()
+result = check_win(choices["player"], choices["computer"])
+print(result)
+
+    
+   
+
+
